@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Card Gallery</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* 🔷 ID Selector */
+    #gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* 🔷 Class Selectors */
+    .card {
+      background-color: #2e2e42;
+      border-radius: 12px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #00f7ff;
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      color: #9ae66e;
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: #00b4d8;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #0096c7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Product Card Gallery</h1>
+
+  <div id="gallery">
+    <div class="card">
+      <img src="/CSS/Img/watch.jpg" alt="Product 1">
+      <div class="title">Smart Watch</div>
+      <div class="price">1.5k</div>
+      <button class="btn">Buy Now</button>
+    </div>
+    
+    <div class="card">
+      <img src="/CSS/Img/Wh.jpg" alt="Product 2">
+      <div class="title">Wireless Headphones</div>
+      <div class="price">1k</div>
+      <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="/CSS/Img/b.webp" alt="Product 3">
+      <div class="title">Bluetooth Speaker</div>
+      <div class="price">2k</div>
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>

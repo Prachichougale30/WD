@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DYP CSE Timetable</title>
+
+  <!-- Internal CSS using selectors -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a2e;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #00f2ff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #2a2a40;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00b4d8;
+      color: white;
+    }
+
+    td {
+      background-color: #3a3a5c;
+    }
+
+    /* Highlight first column with beige */
+    td:first-child {
+      background-color: #d3cbb8;
+      font-weight: bold;
+    }
+
+    /* Styling BREAK rows */
+    td[rowspan="6"] {
+      writing-mode: vertical-rl;
+      background-color: #7209b7;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Style nested BRs inside labs */
+    td[colspan="2"] {
+      text-align: left;
+      background-color: #2c2c4d;
+    }
+
+    /* Hover effect for interactivity */
+    td:hover {
+      background-color: #4b4b70;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h3>D.Y. Patil College of Engineering & Technology, Kolhapur<br>
+      Department of Computer Science & Engineering <br>
+      <strong>TimeTable 2024–2025</strong>
+  </h3>
+
+  <!-- Timetable Table -->
+  <table>
+    <tr>
+      <th>Day & Time</th>
+      <th>9:00 – 10:00</th>
+      <th>10:00 – 11:00</th>
+      <th rowspan="6">BREAK</th>
+      <th>11:15 – 12:15</th>
+      <th>12:15 – 1:15</th>
+      <th rowspan="6">BREAK</th>
+      <th>2:00 – 3:00</th>
+      <th>3:00 – 4:00</th>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+      <td>Monday</td>
+      <td colspan="2">
+        S1-DSL (SSKokate) [Lab 8]<br>
+        S2-AOOC (KBK) [Lab 5]<br>
+        S3-TPMS (PRP) [Lab 11]<br>
+        S4-TTL (SPS) [Lab 10]<br>
+        S5-TTL (IPT) [Lab 12]<br>
+        S6-WD (SSKORE) [Lab 2]
+      </td>
+      <td>DS (L)<br>SSKokate</td>
+      <td>MDM-II (L)<br>VVM</td>
+      <td>AT (L)<br>KAB</td>
+      <td>ES (L)<br>PA</td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+      <td>Tuesday</td>
+      <td colspan="2">
+        S1-WD<br>
+        S2-DSL (SSKokate) [Lab 8]<br>
+        S3-AOOC (KBK) [Lab 5]<br>
+        S4-TTL (SPS) [Lab 10]<br>
+        S5-TPMS (PRP) [Lab 11]<br>
+        S6-TTL (IPT) [Lab 12]
+      </td>
+      <td>DS (L)<br>SSKokate</td>
+      <td>MDM-II (L)<br>VVM</td>
+      <td>AT (L)<br>KAB</td>
+      <td>ES (L)<br>PA</td>
+    </tr>
+
+    <!-- Wednesday -->
+    <tr>
+      <td>Wednesday</td>
+      <td colspan="2">
+        S1-WD<br>
+        S2-DSL (SSKokate) [Lab 8]<br>
+        S3-AOOC (KBK) [Lab 5]<br>
+        S4-TTL (SPS) [Lab 10]<br>
+        S5-TPMS (PRP) [Lab 11]<br>
+        S6-TTL (IPT) [Lab 12]
+      </td>
+      <td>DS (L)<br>SSKokate</td>
+      <td>MDM-II (L)<br>VVM</td>
+      <td>AT (L)<br>KAB</td>
+      <td>ES (L)<br>PA</td>
+    </tr>
+
+    <!-- Thursday -->
+    <tr>
+      <td>Thursday</td>
+      <td colspan="2">
+        S1-WD<br>
+        S2-DSL (SSKokate) [Lab 8]<br>
+        S3-AOOC (KBK) [Lab 5]<br>
+        S4-TTL (SPS) [Lab 10]<br>
+        S5-TPMS (PRP) [Lab 11]<br>
+        S6-TTL (IPT) [Lab 12]
+      </td>
+      <td>DS (L)<br>SSKokate</td>
+      <td>MDM-II (L)<br>VVM</td>
+      <td>AT (L)<br>KAB</td>
+      <td>ES (L)<br>PA</td>
+    </tr>
+
+    <!-- Friday -->
+    <tr>
+      <td>Friday</td>
+      <td colspan="2">
+        S1-WD<br>
+        S2-DSL (SSKokate) [Lab 8]<br>
+        S3-AOOC (KBK) [Lab 5]<br>
+        S4-TTL (SPS) [Lab 10]<br>
+        S5-TPMS (PRP) [Lab 11]<br>
+        S6-TTL (IPT) [Lab 12]
+      </td>
+      <td>DS (L)<br>SSKokate</td>
+      <td>MDM-II (L)<br>VVM</td>
+      <td>AT (L)<br>KAB</td>
+      <td>ES (L)<br>PA</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
